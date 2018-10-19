@@ -44,7 +44,7 @@ class ModulationDataset(Data.Dataset):
 
 def separate_train_val(mods, train_num, val_num):
 
-    data = scipy.io.loadmat('C:/matlab_sim/batch100000_symbols128_sps8_baud1_snr50.dat')
+    data = scipy.io.loadmat('C:/matlab_sim/batch100000_symbols128_sps8_baud1_snr45.dat')
     train_input = []
     train_label = []
     val_input = []
@@ -71,4 +71,4 @@ def separate_train_val(mods, train_num, val_num):
 
 
 if __name__ == '__main__':
-    separate_train_val(mods, train_num, val_num, '')
+    separate_train_val(mods, train_num, val_num)

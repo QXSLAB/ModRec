@@ -70,7 +70,7 @@ def main():
 
     val_loader = Data.DataLoader(ModulationDataset(False),
                                  batch_size=args.batch_size,
-                                 shuffle=False,
+                                 shuffle=True,
                                  num_workers=4)
 
     if args.evaluate:
